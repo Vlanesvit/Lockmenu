@@ -178,7 +178,7 @@
     position: absolute;
     top: 33.6%;
     right: -12.7%;
-    z-index: 10;
+    z-index: 100;
   }
 }
 @media (min-width: 991.98px) and (max-width: 1569.98px) {
@@ -191,6 +191,14 @@
     margin-top: 48px;
     padding: 0px 8px;
   }
+}
+.rs-banner__links.fixed {
+  position: fixed;
+  bottom: 0;
+  top: auto;
+  right: 0%;
+  z-index: 1000;
+  padding: 24px;
 }
 @media (min-width: 767.98px) {
   .rs-banner__links ul {

@@ -181,7 +181,7 @@
 			// right: -155px;
 			top: 33.6%;
 			right: -12.7%;
-			z-index: 10;
+			z-index: 100;
 
 			@media (max-width: 1569.98px) {
 				right: -5%;
@@ -191,6 +191,15 @@
 		@media (max-width: 991.98px) {
 			margin-top: 48px;
 			padding: 0px 8px;
+		}
+
+		&.fixed {
+			position: fixed;
+			bottom: 0;
+			top: auto;
+			right: 0%;
+			z-index: 1000;
+			padding: 24px;
 		}
 
 		ul {

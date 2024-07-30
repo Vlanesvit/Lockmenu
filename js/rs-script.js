@@ -41,6 +41,30 @@ function addLoadedClass() {
 }
 addLoadedClass()
 
+document.addEventListener('DOMContentLoaded', function () {
+	const fixedBlock = document.querySelector('.rs-banner__links');
+	const placeholder = document.createElement('div');
+	placeholder.style.width = '100%';
+	placeholder.style.height = `${fixedBlock.offsetHeight}px`;
+
+	let isFixed = false;
+
+	window.addEventListener('scroll', function () {
+		const rect = fixedBlock.getBoundingClientRect();
+		const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+
+		if (rect.bottom <= windowHeight && !isFixed) {
+			fixedBlock.classList.add('fixed');
+			fixedBlock.parentNode.insertBefore(placeholder, fixedBlock);
+			isFixed = true;
+		} else if (rect.bottom > windowHeight && isFixed) {
+			fixedBlock.classList.remove('fixed');
+			fixedBlock.parentNode.removeChild(placeholder);
+			isFixed = false;
+		}
+	});
+});
+
 /* ====================================
 Спойлеры/аккордионы
 ==================================== */
