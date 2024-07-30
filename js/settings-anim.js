@@ -90,6 +90,18 @@ function showContentOnScroll(elem, duration, delay, direction) {
 
 //========================================================================================================================================================
 function animDesktop() {
+	gsap.utils.toArray('.rs-features__block').forEach(card => {
+		gsap.from(card, {
+			scrollTrigger: {
+				trigger: '.rs-features',
+				start: "top-=30% top",
+				end: "bottom+=30% bottom",
+				scrub: true,
+				markers: 1
+			},
+			y: 500,
+		});
+	});
 }
 
 function animMobile() {
@@ -104,20 +116,6 @@ function animCommon() {
 	showContentOnScroll('.rs-banner__text h5', 0.5, 0.6, 'bottom-up');
 	showContentOnScroll('.rs-banner__img', 0.5, 1, 'bottom-up');
 	showContentOnScroll('.rs-banner__links', 0.5, 1.5, 'right-left');
-
-	const parallaxImgTop = gsap.timeline({
-		scrollTrigger: {
-			trigger: ".rs-features",
-			scrub: 1,
-			start: "top top",
-			end: "bottom bottom",
-			// pin: 1,
-			// markers: 1
-		}
-	});
-	parallaxImgTop.from('.rs-features__block', {
-		y: '500px',
-	})
 
 	showContentOnScroll('.rs-features__img', 0.5, 0.5, 'right-left');
 
