@@ -1,0 +1,65 @@
+<svg width="64" height="65" viewBox="0 0 64 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11 51.5H23V54.5H11V51.5Z" fill="var(--second-light-color)"/>
+<path d="M41 51.5H53V54.5H41V51.5Z" fill="var(--second-light-color)"/>
+<path d="M26 51.5H38V54.5H26V51.5Z" fill="var(--second-light-color)"/>
+<path d="M11 45.5H23V48.5H11V45.5Z" fill="var(--second-light-color)"/>
+<path d="M41 45.5H53V48.5H41V45.5Z" fill="var(--second-light-color)"/>
+<path d="M26 45.5H38V48.5H26V45.5Z" fill="var(--second-light-color)"/>
+<path d="M11 39.5H23V42.5H11V39.5Z" fill="var(--second-light-color)"/>
+<path d="M41 39.5H53V42.5H41V39.5Z" fill="var(--second-light-color)"/>
+<path d="M26 39.5H38V42.5H26V39.5Z" fill="var(--second-light-color)"/>
+<path d="M11 33.5H23V36.5H11V33.5Z" fill="var(--second-light-color)"/>
+<path d="M41 33.5H53V36.5H41V33.5Z" fill="var(--second-light-color)"/>
+<path d="M11 27.5L23 27.5V30.5H11V27.5Z" fill="var(--second-light-color)"/>
+<path d="M44 25.5H50V28.5H44V25.5Z" fill="var(--second-light-color)"/>
+<path d="M35 19.5H41V22.5H35V19.5Z" fill="var(--second-light-color)"/>
+<path d="M41 16.5L41 22.5L38 22.5L38 16.5L41 16.5Z" fill="var(--second-light-color)"/>
+<path d="M32 10.5L32 16.5L29 16.5L29 10.5L32 10.5Z" fill="var(--second-light-color)"/>
+<path d="M44 10.5L50 10.5V13.5H44V10.5Z" fill="var(--second-light-color)"/>
+<path d="M35 4.5L41 4.5V7.5L35 7.5V4.5Z" fill="var(--second-light-color)"/>
+<path d="M50 13.5H53V16.5H50V13.5Z" fill="var(--second-light-color)"/>
+<path d="M41 7.5L44 7.5V10.5H41V7.5Z" fill="var(--second-light-color)"/>
+<path d="M41 13.5H44V16.5H41V13.5Z" fill="var(--second-light-color)"/>
+<path d="M32 7.5L35 7.5V10.5H32V7.5Z" fill="var(--second-light-color)"/>
+<path d="M50 22.5H53V25.5H50V22.5Z" fill="var(--second-light-color)"/>
+<path d="M41 22.5H44V25.5H41V22.5Z" fill="var(--second-light-color)"/>
+<path d="M32 16.5H35V19.5H32V16.5Z" fill="var(--second-light-color)"/>
+<path d="M56 16.5L56 22.5L53 22.5L53 16.5L56 16.5Z" fill="var(--second-light-color)"/>
+<path d="M23 51.5H26V60.5H23V51.5Z" fill="var(--second-light-color)"/>
+<path d="M38 51.5H41V60.5H38V51.5Z" fill="var(--second-light-color)"/>
+<path d="M23 45.5H26V54.5H23V45.5Z" fill="var(--second-light-color)"/>
+<path d="M38 45.5H41V54.5H38V45.5Z" fill="var(--second-light-color)"/>
+<path d="M23 39.5H26V48.5H23V39.5Z" fill="var(--second-light-color)"/>
+<path d="M38 39.5H41V48.5H38V39.5Z" fill="var(--second-light-color)"/>
+<path d="M23 33.5H26V42.5H23V33.5Z" fill="var(--second-light-color)"/>
+<path d="M38 33.5H41V42.5H38V33.5Z" fill="var(--second-light-color)"/>
+<path d="M23 27.5H26V36.5H23V27.5Z" fill="var(--second-light-color)"/>
+<path d="M8 51.5H11L11 60.5H8L8 51.5Z" fill="var(--second-light-color)"/>
+<path d="M38 51.5H41V60.5H38V51.5Z" fill="var(--second-light-color)"/>
+<path d="M23 51.5H26V60.5H23V51.5Z" fill="var(--second-light-color)"/>
+<path d="M8 45.5H11L11 54.5H8L8 45.5Z" fill="var(--second-light-color)"/>
+<path d="M38 45.5H41V54.5H38V45.5Z" fill="var(--second-light-color)"/>
+<path d="M23 45.5H26V54.5H23V45.5Z" fill="var(--second-light-color)"/>
+<path d="M8 39.5H11L11 48.5H8L8 39.5Z" fill="var(--second-light-color)"/>
+<path d="M38 39.5H41V48.5H38V39.5Z" fill="var(--second-light-color)"/>
+<path d="M23 39.5H26V48.5H23V39.5Z" fill="var(--second-light-color)"/>
+<path d="M8 33.5H11L11 42.5H8L8 33.5Z" fill="var(--second-light-color)"/>
+<path d="M38 33.5H41V42.5H38V33.5Z" fill="var(--second-light-color)"/>
+<path d="M53 33.5H56L56 60.5H53L53 33.5Z" fill="var(--second-light-color)"/>
+<path d="M23 33.5H26V42.5H23V33.5Z" fill="var(--second-light-color)"/>
+<path d="M8 27.5H11L11 36.5H8L8 27.5Z" fill="var(--second-light-color)"/>
+<path d="M11 57.5H23V60.5H11V57.5Z" fill="var(--second-light-color)"/>
+<path d="M41 57.5H53V60.5H41V57.5Z" fill="var(--second-light-color)"/>
+<path d="M26 57.5H38V60.5H26V57.5Z" fill="var(--second-light-color)"/>
+<path d="M11 51.5H23V54.5H11V51.5Z" fill="var(--second-light-color)"/>
+<path d="M41 51.5H53V54.5H41V51.5Z" fill="var(--second-light-color)"/>
+<path d="M26 51.5H38V54.5H26V51.5Z" fill="var(--second-light-color)"/>
+<path d="M11 45.5H23V48.5H11V45.5Z" fill="var(--second-light-color)"/>
+<path d="M41 45.5H53V48.5H41V45.5Z" fill="var(--second-light-color)"/>
+<path d="M26 45.5H38V48.5H26V45.5Z" fill="var(--second-light-color)"/>
+<path d="M11 39.5H23V42.5H11V39.5Z" fill="var(--second-light-color)"/>
+<path d="M41 39.5H53V42.5H41V39.5Z" fill="var(--second-light-color)"/>
+<path d="M26 39.5H38V42.5H26V39.5Z" fill="var(--second-light-color)"/>
+<path d="M11 33.5H23V36.5H11V33.5Z" fill="var(--second-light-color)"/>
+<path d="M41 33.5H53V36.5H41V33.5Z" fill="var(--second-light-color)"/>
+</svg>

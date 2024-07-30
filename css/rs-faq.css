@@ -1,0 +1,189 @@
+.rs-faq {
+  margin-top: 160px;
+  margin-bottom: 160px;
+}
+@media (max-width: 1439.98px) {
+  .rs-faq {
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
+}
+@media (max-width: 1169.98px) {
+  .rs-faq {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+}
+@media (max-width: 991.98px) {
+  .rs-faq {
+    margin-top: 82px;
+    margin-bottom: 124px;
+  }
+}
+@media (min-width: 991.98px) {
+  .rs-faq__wrapper {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 30px;
+  }
+}
+@media (min-width: 991.98px) {
+  .rs-faq__text {
+    grid-column: 4 span;
+  }
+}
+@media (min-width: 991.98px) {
+  .rs-faq__text .section-header {
+    text-align: left;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+.rs-faq__text .section-header h2 {
+  line-height: 120%;
+}
+.rs-faq__text .section-header h2::before, .rs-faq__text .section-header h2::after {
+  width: 64px;
+  height: 64px;
+  background-image: url("../img/blocks/faq/faq_icon.svg");
+}
+@media (max-width: 1439.98px) {
+  .rs-faq__text .section-header h2::before, .rs-faq__text .section-header h2::after {
+    width: 60px;
+    height: 60px;
+  }
+}
+@media (max-width: 1169.98px) {
+  .rs-faq__text .section-header h2::before, .rs-faq__text .section-header h2::after {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media (max-width: 991.98px) {
+  .rs-faq__text .section-header h2::before, .rs-faq__text .section-header h2::after {
+    width: 35px;
+    height: 35px;
+  }
+}
+@media (max-width: 767.98px) {
+  .rs-faq__text .section-header h2::before, .rs-faq__text .section-header h2::after {
+    top: 1px;
+    bottom: auto;
+  }
+}
+@media (min-width: 991.98px) {
+  .rs-faq__text .section-header h2::before {
+    display: none;
+  }
+}
+@media (max-width: 991.98px) {
+  .rs-faq__text .section-header h2::before {
+    right: calc(100% + 0px);
+  }
+}
+.rs-faq__text .section-header h2::after {
+  left: calc(100% - 50px);
+  -webkit-transform: scale(1, 1);
+      -ms-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+@media (max-width: 991.98px) {
+  .rs-faq__text .section-header h2::after {
+    left: calc(100% + 0px);
+  }
+}
+.rs-faq__text .rs-btn {
+  margin-top: 24px;
+}
+@media (max-width: 991.98px) {
+  .rs-faq__text .rs-btn {
+    position: absolute;
+    top: calc(100% + 24px);
+    margin-top: 0px;
+  }
+}
+@media (min-width: 991.98px) {
+  .rs-faq__block {
+    grid-column: 6 span;
+  }
+}
+@media (max-width: 991.98px) {
+  .rs-faq__block {
+    margin-top: 24px;
+  }
+}
+.rs-faq__spollers_item {
+  padding: 0px 0px 39.5px 0px;
+  border-bottom: 1px solid var(--primary-color);
+}
+@media (max-width: 1439.98px) {
+  .rs-faq__spollers_item {
+    padding-bottom: 30px;
+  }
+}
+@media (max-width: 991.98px) {
+  .rs-faq__spollers_item {
+    padding-bottom: 24px;
+  }
+}
+.rs-faq__spollers_item:not(:last-child) {
+  margin-bottom: 40px;
+}
+@media (max-width: 1439.98px) {
+  .rs-faq__spollers_item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 991.98px) {
+  .rs-faq__spollers_item:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+.rs-faq__spollers_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+}
+.rs-faq__spollers_title::after {
+  content: "";
+  display: inline-block;
+  min-width: 25px;
+  aspect-ratio: 1;
+  background-image: url("../img/blocks/faq/faq_arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  -webkit-transition: -webkit-transform 0.3s ease 0s;
+  transition: -webkit-transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
+}
+.rs-faq__spollers_title._spoller-active::after {
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+.rs-faq__spollers_body {
+  margin-top: 16px;
+  line-height: 140%;
+  letter-spacing: 0.01em;
+}
+@media (max-width: 991.98px) {
+  .rs-faq__spollers_body {
+    line-height: 125%;
+    letter-spacing: 0px;
+  }
+}

@@ -1,0 +1,101 @@
+.rs-marquee {
+  margin-top: 170px;
+}
+@media (max-width: 1439.98px) {
+  .rs-marquee {
+    margin-top: 120px;
+  }
+}
+@media (max-width: 1169.98px) {
+  .rs-marquee {
+    margin-top: 100px;
+  }
+}
+@media (max-width: 991.98px) {
+  .rs-marquee {
+    margin-top: 82px;
+  }
+}
+.rs-marquee__list:not(:last-child) {
+  margin-bottom: 8px;
+}
+@media (any-hover: hover) {
+  .rs-marquee__list:hover li {
+    color: var(--second-color);
+  }
+}
+.rs-marquee__list[data-direction=left] ul li:not(:first-child) {
+  margin-left: 40px;
+}
+@media (max-width: 1439.98px) {
+  .rs-marquee__list[data-direction=left] ul li:not(:first-child) {
+    margin-left: 32px;
+  }
+}
+@media (max-width: 1169.98px) {
+  .rs-marquee__list[data-direction=left] ul li:not(:first-child) {
+    margin-left: 24px;
+  }
+}
+@media (max-width: 991.98px) {
+  .rs-marquee__list[data-direction=left] ul li:not(:first-child) {
+    margin-left: 16px;
+  }
+}
+.rs-marquee__list[data-direction=right] ul li:not(:last-child) {
+  margin-right: 40px;
+}
+@media (max-width: 1439.98px) {
+  .rs-marquee__list[data-direction=right] ul li:not(:last-child) {
+    margin-right: 32px;
+  }
+}
+@media (max-width: 1169.98px) {
+  .rs-marquee__list[data-direction=right] ul li:not(:last-child) {
+    margin-right: 24px;
+  }
+}
+@media (max-width: 991.98px) {
+  .rs-marquee__list[data-direction=right] ul li:not(:last-child) {
+    margin-right: 16px;
+  }
+}
+.rs-marquee__list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.rs-marquee__list ul li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  white-space: nowrap;
+  font-weight: 600;
+  font-size: 80px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: rgba(0, 51, 173, 0.2);
+  -webkit-transition: color 0.3s ease 0s;
+  transition: color 0.3s ease 0s;
+}
+@media (max-width: 1439.98px) {
+  .rs-marquee__list ul li {
+    font-size: 65px;
+  }
+}
+@media (max-width: 1169.98px) {
+  .rs-marquee__list ul li {
+    font-size: 55px;
+  }
+}
+@media (max-width: 991.98px) {
+  .rs-marquee__list ul li {
+    font-size: 40px;
+  }
+}
+.rs-marquee__list ul li span {
+  color: var(--second-color);
+}

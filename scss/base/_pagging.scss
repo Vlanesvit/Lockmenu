@@ -1,0 +1,140 @@
+.pagging {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 50px;
+
+	@media (max-width: 1439.98px) {
+		margin-top: 30px;
+	}
+
+	@media (max-width: 991.98px) {
+		margin-top: 15px;
+		justify-content: center;
+	}
+
+	// .pagging__arrow
+	&__arrow {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: 1.28px solid #f1f1f1;
+		border-radius: 50%;
+		padding: 12px;
+		width: 50px;
+		height: 50px;
+		transition: all 0.3s ease 0s;
+		border-radius: 50%;
+		background-color: #fff;
+
+		@media (max-width: 1439.98px) {
+			width: 40px;
+			height: 40px;
+		}
+
+		@media (max-width: 991.98px) {
+			width: 30px;
+			height: 30px;
+			padding: 8px;
+		}
+
+		svg {
+			path {
+				transition: fill 0.3s ease 0s;
+			}
+		}
+
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: var(--primary-color);
+				border-color: var(--primary-color);
+
+				svg {
+					path {
+						fill: #fff;
+					}
+				}
+			}
+		}
+	}
+
+	// .pagging__prev
+	&__begin,
+	&__prev {
+		margin-right: 14px;
+
+		@media (max-width: 991.98px) {
+			margin-right: 5px;
+		}
+	}
+
+	// .pagging__next
+	&__next,
+	&__finish {
+		margin-left: 14px;
+
+		@media (max-width: 991.98px) {
+			margin-left: 5px;
+		}
+	}
+
+	// .pagging__list
+	&__list {
+		display: flex;
+		align-items: center;
+
+		li {
+			&:not(:last-child) {
+				margin-right: 14px;
+
+				@media (max-width: 991.98px) {
+					margin-right: 5px;
+				}
+			}
+		}
+	}
+
+	// .pagging__item
+	&__item,
+	&__more {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50%;
+		border: 1.28px solid #f1f1f1;
+		background-color: #fff;
+		border-radius: 30px;
+		padding: 12px;
+		width: 50px;
+		height: 50px;
+		font-weight: 600;
+		font-size: 16px;
+		color: #81818a;
+		transition: all 0.3s ease 0s;
+
+		@media (max-width: 1439.98px) {
+			width: 40px;
+			height: 40px;
+			font-size: 14px;
+		}
+
+		@media (max-width: 991.98px) {
+			width: 30px;
+			height: 30px;
+			font-size: 12px;
+		}
+
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: var(--primary-color);
+				border-color: var(--primary-color);
+				color: #fff;
+			}
+		}
+
+		&._active {
+			background-color: var(--primary-color);
+			border-color: var(--primary-color);
+			color: #fff;
+		}
+	}
+}
