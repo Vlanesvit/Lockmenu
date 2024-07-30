@@ -112,7 +112,7 @@ function animDesktop() {
 				start: "top-=30% top",
 				end: "bottom+=30% bottom",
 				scrub: true,
-				markers: 1
+				// markers: 1
 			},
 			y: 500,
 		});
