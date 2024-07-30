@@ -89,11 +89,17 @@
 			}
 		}
 
-		
+		h1 {
+			.line {
+				opacity: 0;
+				display: block;
+				visibility: hidden;
+			}
+		}
 
 		h5 {
 			margin-top: 49px;
-			
+
 			@media (max-width: 767.98px) {
 				display: none;
 			}

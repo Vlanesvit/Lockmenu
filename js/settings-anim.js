@@ -88,6 +88,21 @@ function showContentOnScroll(elem, duration, delay, direction) {
 	}
 }
 
+function strokeTextAnimation(elem) {
+	const text = document.querySelector(elem);
+	const lines = text.innerHTML.split("<br>");
+	text.innerHTML = lines.map(line => `<div class="line">${line.trim()}</div>`).join("");
+	gsap.to(".line", {
+		duration: 1,
+		opacity: 1,
+		y: 0,
+		stagger: 0.5,
+		ease: "power2.out",
+		visibility: "visible",
+		startAt: { y: 50, opacity: 0 }
+	});
+}
+
 //========================================================================================================================================================
 function animDesktop() {
 	gsap.utils.toArray('.rs-features__block').forEach(card => {
@@ -111,15 +126,16 @@ function animCommon() {
 	/* REVEAL ANIMATION */
 	showContentOnScroll('section .section-header', 0.5, 0.1, 'bottom-up');
 
-	showContentOnScroll('.rs-banner__text', 0.5, 0, 'scale');
-	showContentOnScroll('.rs-banner__text h1', 0.5, 0.3, 'bottom-up');
+	// showContentOnScroll('.rs-banner__text', 0.5, 0, 'scale');
+	// showContentOnScroll('.rs-banner__text h1', 0.5, 0.3, 'bottom-up');
+	strokeTextAnimation('.rs-banner__text h1');
 	showContentOnScroll('.rs-banner__text h5', 0.5, 0.6, 'bottom-up');
 	showContentOnScroll('.rs-banner__img', 0.5, 1, 'bottom-up');
 	showContentOnScroll('.rs-banner__links', 0.5, 1.5, 'right-left');
 
 	showContentOnScroll('.rs-features__img', 0.5, 0.5, 'right-left');
 
-	showContentOnScroll('.rs-about__item', 0.5, 0.2, 'bottom-up--every');
+	showContentOnScroll('.rs-about__item', 0.5, 0.1, 'bottom-up--every');
 
 	showContentOnScroll('.rs-function__item', 0.5, 0.1, 'bottom-up--every');
 

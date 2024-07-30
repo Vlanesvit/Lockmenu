@@ -88,6 +88,11 @@
     bottom: -5.5%;
   }
 }
+.rs-banner__text h1 .line {
+  opacity: 0;
+  display: block;
+  visibility: hidden;
+}
 .rs-banner__text h5 {
   margin-top: 49px;
 }
