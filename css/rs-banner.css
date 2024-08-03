@@ -173,32 +173,19 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
-@media (min-width: 991.98px) {
-  .rs-banner__links {
-    position: absolute;
-    top: 33.6%;
-    right: -12.7%;
-    z-index: 100;
-  }
-}
-@media (min-width: 991.98px) and (max-width: 1569.98px) {
-  .rs-banner__links {
-    right: -5%;
-  }
-}
-@media (max-width: 991.98px) {
-  .rs-banner__links {
-    margin-top: 48px;
-    padding: 0px 8px;
-  }
-}
-.rs-banner__links.fixed {
+.rs-banner__links {
   position: fixed;
   bottom: 0;
   top: auto;
   right: 0%;
   z-index: 1000;
   padding: 24px;
+}
+@media (max-width: 991.98px) {
+  .rs-banner__links {
+    width: 100%;
+    padding: 16px 32px;
+  }
 }
 @media (min-width: 767.98px) {
   .rs-banner__links ul {

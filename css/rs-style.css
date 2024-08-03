@@ -422,6 +422,7 @@ p {
 
 .rs-btn {
   position: relative;
+  min-height: 50px;
   -webkit-appearance: button;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -462,16 +463,16 @@ p {
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
-  width: 8px;
+  width: 9px;
   height: 33px;
   -webkit-transition: height 0.3s ease 0s;
   transition: height 0.3s ease 0s;
 }
 .rs-btn::before {
-  right: 100%;
+  right: calc(100% - 1px);
 }
 .rs-btn::after {
-  left: 100%;
+  left: calc(100% - 1px);
 }
 .rs-btn svg {
   margin-left: 10px;
