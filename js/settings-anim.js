@@ -2,7 +2,6 @@
 Документация: 
 https://gsap.com/
 https://gsap.com/docs/v3/Plugins/ScrollTrigger/
-https://gsap.com/docs/v3/Plugins/ScrollToPlugin
 */
 
 gsap.registerPlugin(
@@ -15,11 +14,33 @@ window.addEventListener('load', function () {
 	setTimeout(() => {
 		ScrollTrigger.refresh();
 		breakpointGsapAnimChecker();
-		window.scrollTo(0, 0);
+		// window.scrollTo(0, 0);
 	}, 100);
 })
 
 //========================================================================================================================================================
+function smoothScroller() {
+	let scrollPosition = 0;
+
+	window.addEventListener('scroll', () => {
+		scrollPosition = window.scrollY;
+	});
+
+	function smoothScroll() {
+		gsap.to(window, {
+			scrollTo: scrollPosition,
+			duration: 0.5,
+			ease: "power2.out",
+			overwrite: true
+		});
+
+		requestAnimationFrame(smoothScroll);
+	}
+
+	smoothScroll();
+}
+smoothScroller()
+
 /* REVEAL ANIMATION */
 function showContentOnScroll(elem, duration, delay, direction) {
 	if (document.querySelectorAll(elem)) {
@@ -112,6 +133,7 @@ function animDesktop() {
 				start: "top-=30% top",
 				end: "bottom+=30% bottom",
 				scrub: true,
+				ease: "circ.out",
 				// markers: 1
 			},
 			y: 500,

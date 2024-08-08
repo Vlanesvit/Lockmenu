@@ -23,7 +23,9 @@
 	&__logo {
 		position: absolute;
 		bottom: calc(100% - 18px);
-		left: 0;
+		max-width: 1920px;
+		left: 50%;
+		transform: translateX(-50%);
 		width: 100%;
 		padding: 0px 72px;
 
