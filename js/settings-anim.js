@@ -19,28 +19,6 @@ window.addEventListener('load', function () {
 })
 
 //========================================================================================================================================================
-function smoothScroller() {
-	let scrollPosition = 0;
-
-	window.addEventListener('scroll', () => {
-		scrollPosition = window.scrollY;
-	});
-
-	function smoothScroll() {
-		gsap.to(window, {
-			scrollTo: scrollPosition,
-			duration: 0.5,
-			ease: "power2.out",
-			overwrite: true
-		});
-
-		requestAnimationFrame(smoothScroll);
-	}
-
-	smoothScroll();
-}
-smoothScroller()
-
 /* REVEAL ANIMATION */
 function showContentOnScroll(elem, duration, delay, direction) {
 	if (document.querySelectorAll(elem)) {
@@ -139,9 +117,37 @@ function animDesktop() {
 			y: 500,
 		});
 	});
+
+	gsap.to('.rs-faq__text .section-header', {
+		scrollTrigger: {
+			trigger: '.rs-faq__text .section-header',
+			start: `top top+=100px`,
+			end: `bottom bottom-=50%`,
+			endTrigger: '.rs-faq',
+			pin: true,
+			pinSpacing: false,
+			scrub: true,
+			invalidateOnRefresh: true,
+			// markers: 1,
+		},
+	});
+
 }
 
 function animMobile() {
+	gsap.to('.rs-banner__links', {
+		scrollTrigger: {
+			trigger: '.rs-banner__links',
+			start: `bottom bottom`,
+			end: `bottom bottom`,
+			endTrigger: '.wrapper',
+			pin: true,
+			pinSpacing: false,
+			scrub: true,
+			invalidateOnRefresh: true,
+			// markers: 1,
+		},
+	});
 }
 
 function animCommon() {
@@ -153,7 +159,7 @@ function animCommon() {
 	strokeTextAnimation('.rs-banner__text h1');
 	showContentOnScroll('.rs-banner__text h5', 0.5, 0.6, 'bottom-up');
 	showContentOnScroll('.rs-banner__img', 0.5, 1, 'bottom-up');
-	showContentOnScroll('.rs-banner__links', 0.5, 1.5, 'right-left');
+	// showContentOnScroll('.rs-banner__links', 0.5, 1.5, 'right-left');
 
 	showContentOnScroll('.rs-features__img', 0.5, 0.5, 'right-left');
 

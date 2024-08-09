@@ -174,17 +174,22 @@
      object-fit: cover;
 }
 .rs-banner__links {
-  position: fixed;
-  bottom: 0;
-  top: auto;
-  right: 0%;
   z-index: 1000;
   padding: 24px;
+}
+@media (min-width: 991.98px) {
+  .rs-banner__links {
+    position: fixed;
+    bottom: 0;
+    top: auto;
+    right: 0%;
+  }
 }
 @media (max-width: 991.98px) {
   .rs-banner__links {
     width: 100%;
-    padding: 16px 32px;
+    padding: 16px 8px;
+    margin-top: 24px;
   }
 }
 @media (min-width: 767.98px) {
